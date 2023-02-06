@@ -4,9 +4,6 @@ import { getHotels } from "@/controllers";
 
 const hotelsRouter = Router();
 
-hotelsRouter
-  .all("/*", authenticateToken)
-  .get("/", getHotels)
-  .get("/:hotelId")
+hotelsRouter.all("/*", authenticateToken).get("/", getHotels).get("/:hotelId");
 
 export { hotelsRouter };

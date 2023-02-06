@@ -5,7 +5,7 @@ async function findMany() {
 }
 
 const hotelsRepository = {
-    findMany,
-}
+  findMany,
+};
 
 export default hotelsRepository;
